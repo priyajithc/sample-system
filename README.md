@@ -11,18 +11,18 @@ This bundle includes:
 # backend
 cd app-backend
 npm install
-docker build -t us.icr.io/priyajith/backend:0.1.0 .
+docker build -t us.icr.io/priyajithc/backend:0.1.0 .
 
 # frontend
 cd ../app-frontend
 npm install
-docker build -t us.icr.io/priyajith/frontend:0.1.0 .
+docker build -t us.icr.io/priyajithc/frontend:0.1.0 .
 ```
 Push to your registry (ICR example):
 ```bash
 docker login us.icr.io -u iamapikey
-docker push us.icr.io/priyajith/backend:0.1.0
-docker push us.icr.io/priyajith/frontend:0.1.0
+docker push us.icr.io/priyajithc/backend:0.1.0
+docker push us.icr.io/priyajithc/frontend:0.1.0
 ```
 
 ## Publish charts as OCI

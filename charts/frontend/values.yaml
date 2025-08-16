@@ -1,5 +1,5 @@
 image:
-  repository: us.icr.io/priyajith/frontend
+  repository: us.icr.io/priyajithc/frontend
   tag: "0.1.0"
   pullPolicy: IfNotPresent
 
