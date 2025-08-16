@@ -22,13 +22,13 @@ spec:
             - containerPort: 8080
           readinessProbe:
             httpGet:
-              path: /
+              path: /api/hello
               port: 8080
             initialDelaySeconds: 10
             periodSeconds: 5
           livenessProbe:
             httpGet:
-              path: /
+              path: /api/hello
               port: 8080
             initialDelaySeconds: 15
             periodSeconds: 10
