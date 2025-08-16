@@ -1,5 +1,5 @@
 image:
-  repository: us.icr.io/priyajithc/backend
+  repository: docker.io/priyajith/samp-app-backend
   tag: "0.1.0-rc1"
 replicaCount: 2
 

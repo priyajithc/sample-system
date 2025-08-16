@@ -11,25 +11,25 @@ This bundle includes:
 # backend
 cd app-backend
 npm install
-docker build -t us.icr.io/priyajithc/backend:0.1.0 .
+docker build -t docker.io/priyajith/samp-app-backend:0.1.0 .
 
 # frontend
 cd ../app-frontend
 npm install
-docker build -t us.icr.io/priyajithc/frontend:0.1.0 .
+docker build -t docker.io/priyajith/samp-app-frontend:0.1.0 .
 ```
 Push to your registry (ICR example):
 ```bash
-docker login us.icr.io -u iamapikey
-docker push us.icr.io/priyajithc/backend:0.1.0
-docker push us.icr.io/priyajithc/frontend:0.1.0
+docker login docker.io
+docker push docker.io/priyajith/samp-app-backend:0.1.0
+docker push docker.io/priyajith/samp-app-frontend:0.1.0
 ```
 
 ## Publish charts as OCI
 ```bash
 cd charts
-helm package ./backend && helm push backend-0.1.0.tgz oci://us.icr.io/helm-charts
-helm package ./frontend && helm push frontend-0.1.0.tgz oci://us.icr.io/helm-charts
+helm package ./backend && helm push backend-0.1.0.tgz oci://docker.io/priyajith/helm-charts
+helm package ./frontend && helm push frontend-0.1.0.tgz oci://docker.io/priyajith/helm-charts
 ```
 
 ## Argo CD (env repo)
