@@ -13,5 +13,5 @@ ingress:
           pathType: Prefix
   tls: []
 
-backendServiceName: backend
+backendServiceName: backend-prod-backend
 backendServicePort: 8080
