@@ -13,7 +13,7 @@ ingress:
   enabled: true
   className: nginx
   hosts:
-    - host: frontend-dev.localtest.me
+    - host: frontend.localtest.me
       paths:
         - path: /
           pathType: Prefix
