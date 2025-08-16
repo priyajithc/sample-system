@@ -1,0 +1,14 @@
+image:
+  repository: us.icr.io/priyajith/backend
+  tag: "0.1.0-rc1"
+replicaCount: 2
+
+ingress:
+  enabled: true
+  className: nginx
+  hosts:
+    - host: backend-staging.localtest.me
+      paths:
+        - path: /
+          pathType: Prefix
+  tls: []
