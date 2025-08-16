@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: oci://us.icr.io/helm-charts
-    chart: backend
-    targetRevision: 0.1.0
+    repoURL: https://github.com/priyajithc/sample-system.git
+    targetRevision: main
+    path: charts/backend
     helm:
       valueFiles: [values.yaml]
   destination:
