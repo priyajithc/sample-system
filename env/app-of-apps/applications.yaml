@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/priyajithc/env.git
+    repoURL: https://github.com/priyajithc/sample-system-ops.git
     targetRevision: main
     path: apps
   destination:
