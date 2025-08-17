@@ -18,7 +18,7 @@ spec:
               service:
                 name: {{ include "frontend.fullname" $ }}
                 port:
-                  number: {{ ternary $.Values.service.port 80 (eq "frontend" "frontend") }}
+                  number: {{ $.Values.service.port }}
         {{- end }}
   {{- end }}
   tls:
